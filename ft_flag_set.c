@@ -6,7 +6,7 @@
 /*   By: sushin <sushin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 00:18:05 by sushin            #+#    #+#             */
-/*   Updated: 2021/01/13 01:40:49 by ssb              ###   ########.fr       */
+/*   Updated: 2021/01/13 07:43:35 by ssb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int ft_flag_set(const char *bowl, int i, va_list ap, t_flag *flags)
     while (bowl[++i])
     {
         if (bowl[i] == '0' && flags->width == 0)
-            flags->zero == 1;
+            flags->zero = 1;
         else if (bowl[i] == '-')
             flags->minus = 1;
         else if (bowl[i] == '*')
@@ -56,11 +56,11 @@ int ft_flag_set(const char *bowl, int i, va_list ap, t_flag *flags)
                 flags->width *= -1;
             }
         }
-        else if (ft_isdigit(bowl[i])
-            flags->width = (flags->width * 10) + (bowl[i] - '0')
+        else if (ft_isdigit(bowl[i]))
+            flags->width = (flags->width * 10) + (bowl[i] - '0');
         else if (bowl[i] == '.')
             i = ft_flag_precision(bowl, ++i, flags, ap);
-        if (ft_type_check(bowl[i], flags)
+        if (ft_type_check(bowl[i], flags))
             break ;
     }
     return (i);

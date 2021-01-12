@@ -25,4 +25,5 @@ int             ft_type_hexa(flags, va_arg(ap, unsigned int));
 int             ft_type_unint(flags, va_arg(ap, unsigned int));
 int             ft_type_pointer_add(flags, va_arg(ap, unsigned long long));
 int             ft_type_percent(flags);
+
 #endif

@@ -6,7 +6,7 @@
 /*   By: ssb <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/08 05:31:00 by ssb               #+#    #+#             */
-/*   Updated: 2021/01/13 01:49:58 by ssb              ###   ########.fr       */
+/*   Updated: 2021/01/13 07:40:26 by ssb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int ft_printf(const char *hagisilta, ...)
 			return_v += ft_type_parse(&flags, ap);
 		}
 		else
-			return_v += ft_putchar(hagisilta[i], 1);
+			return_v += ft_putchar(bowl[i]);
 	
 	}
 	va_end(ap);

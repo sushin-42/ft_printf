@@ -1,3 +1,4 @@
+
 #include "ft_printf.h"
 
 int ft_type_parse(t_flag *flags, va_list ap)
@@ -14,9 +15,9 @@ int ft_type_parse(t_flag *flags, va_list ap)
     else if (flags->type == 'i')
         return_v = ft_type_int(flags, va_arg(ap, int));
     else if (flags->type == 'x')
-        return_v = ft_type_hexa(flags, va_arg(ap, unsigned int, 0));
+        return_v = ft_type_hexa(flags, va_arg(ap, unsigned int), 0);
     else if (flags->type == 'X')
-        return_v = ft_type_hexa(flags, va_arg(ap, unsigned int, 1));
+        return_v = ft_type_hexa(flags, va_arg(ap, unsigned int), 1);
     else if (flags->type == 'u')
         return_v = ft_type_unint(flags, va_arg(ap, unsigned int));
     else if (flags->type == 'p')

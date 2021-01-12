@@ -6,14 +6,14 @@
 #    By: ssb <marvin@42.fr>                         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/07 19:07:58 by ssb               #+#    #+#              #
-#    Updated: 2021/01/13 07:09:46 by ssb              ###   ########.fr        #
+#    Updated: 2021/01/13 07:55:22 by ssb              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
-SRCS = ft_printf.c \ 
-		ft_flag_set.c \ 
-		ft_putchar.c \ 
+SRCS = ft_printf.c \
+		ft_flag_set.c \
+		ft_putchar.c \
 		ft_type_parse.c
 OBJS = $(SRCS:.c=.o)
 LIBC = ar -rcs
