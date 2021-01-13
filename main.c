@@ -3,7 +3,9 @@
 
 int main(void)
 {
-    printf("asdf\n");
-    ft_printf("asdf");
+    char c = 'x';
+
+    printf("");
+    ft_printf("");
     return 0;
 }

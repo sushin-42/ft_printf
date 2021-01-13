@@ -6,7 +6,7 @@
 /*   By: ssb <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/08 05:31:00 by ssb               #+#    #+#             */
-/*   Updated: 2021/01/13 07:40:26 by ssb              ###   ########.fr       */
+/*   Updated: 2021/01/13 18:10:32 by ssb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int ft_printf(const char *hagisilta, ...)
 		{
 			ft_bzero(&flags, sizeof(flags));
             i = ft_flag_set(bowl, i, ap, &flags);
-			return_v += ft_type_parse(&flags, ap);
+			return_v += ft_type_path(&flags, ap);
 		}
 		else
 			return_v += ft_putchar(bowl[i]);

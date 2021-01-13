@@ -17,13 +17,8 @@ int             ft_putchar(char i);
 int             ft_flag_set(const char *bowl, int i, va_list ap, t_flag *flags);
 int             ft_flag_precision(const char *bowl, int i, t_flag *flags, va_list ap);
 int             ft_type_check(int c, t_flag *flags);
-int             ft_type_parse(t_flag *flags, va_list ap);
-int             ft_type_char(flags, va_arg(ap, char));
-int             ft_type_string(flags, va_arg(ap, char *));
-int             ft_type_int(flags, va_arg(ap, int));
-int             ft_type_hexa(flags, va_arg(ap, unsigned int));
-int             ft_type_unint(flags, va_arg(ap, unsigned int));
-int             ft_type_pointer_add(flags, va_arg(ap, unsigned long long));
-int             ft_type_percent(flags);
+int             ft_type_path(t_flag *flags, va_list ap);
+int             ft_type_char(t_flag *flags, char c);
+int             ft_putwidth(int width, int diff, int has_zero);
 
 #endif
