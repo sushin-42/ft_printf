@@ -10,11 +10,11 @@ int ft_type_path(t_flag *flags, va_list ap)
         return_v = ft_type_char(flags, va_arg(ap, int));
     else if (flags->type == 's')
         return_v = ft_type_string(flags, va_arg(ap, char *));
-/*    else if (flags->type == 'd')
+    else if (flags->type == 'd')
         return_v = ft_type_int(flags, va_arg(ap, int));
     else if (flags->type == 'i')
         return_v = ft_type_int(flags, va_arg(ap, int));
-    else if (flags->type == 'x')
+/*    else if (flags->type == 'x')
         return_v = ft_type_hexa(flags, va_arg(ap, unsigned int), 0);
     else if (flags->type == 'X')
         return_v = ft_type_hexa(flags, va_arg(ap, unsigned int), 1);

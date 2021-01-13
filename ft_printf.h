@@ -23,5 +23,9 @@ int             ft_type_char(t_flag *flags, char c);
 int             ft_putwidth(int width, int diff, int has_zero);
 int             ft_type_string(t_flag *flags, char *str);
 int             ft_put_string(t_flag *flags, char *str);
-
+int             ft_type_int(t_flag *flags, int i);
+int             ft_plus_int(char *a_i, t_flag *flags);
+int             ft_minus_int(char *a_i, t_flag *flags);
+int             ft_plus_put_int(char *a_i, t_flag *flags);
+int             ft_minus_put_int(char *a_i, t_flag *flags);
 #endif

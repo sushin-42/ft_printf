@@ -6,7 +6,7 @@
 /*   By: sushin <sushin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 00:18:05 by sushin            #+#    #+#             */
-/*   Updated: 2021/01/13 21:21:25 by ssb              ###   ########.fr       */
+/*   Updated: 2021/01/14 05:26:31 by ssb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,13 @@ int ft_flag_set(const char *bowl, int i, va_list ap, t_flag *flags)
 {
     while (bowl[++i])
     {
-        if (bowl[i] == '0' && flags->width == 0)
+        if (bowl[i] == '0' && flags->minus == 0 && flags->width == 0)
             flags->zero = 1;
         else if (bowl[i] == '-')
+        {    
             flags->minus = 1;
+            flags->zero = 0;
+        }
         else if (bowl[i] == '*')
         {
             flags->width = va_arg(ap, int);
