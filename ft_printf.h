@@ -2,6 +2,7 @@
 # define FT_PRINTF_H
 # include <stdarg.h>
 # include "./libft/libft.h"
+# include <stdio.h>
 
 typedef struct  s_flag
 {
@@ -20,5 +21,7 @@ int             ft_type_check(int c, t_flag *flags);
 int             ft_type_path(t_flag *flags, va_list ap);
 int             ft_type_char(t_flag *flags, char c);
 int             ft_putwidth(int width, int diff, int has_zero);
+int             ft_type_string(t_flag *flags, char *str);
+int             ft_put_string(t_flag *flags, char *str);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: sushin <sushin@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/13 00:18:05 by sushin            #+#    #+#             */
-/*   Updated: 2021/01/13 07:43:35 by ssb              ###   ########.fr       */
+/*   Updated: 2021/01/13 21:21:25 by ssb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int ft_flag_precision(const char *bowl, int i, t_flag *flags, va_list ap)
         flags->precision = va_arg(ap, int);
     else
     {    
+        flags->precision = 0;
         while (ft_isdigit(bowl[i]))
         {    
             flags->precision = (flags->precision * 10) + (bowl[i] - '0');

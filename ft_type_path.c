@@ -8,9 +8,9 @@ int ft_type_path(t_flag *flags, va_list ap)
     return_v = 0;
     if (flags->type == 'c')
         return_v = ft_type_char(flags, va_arg(ap, int));
-/*    else if (flags->type == 's')
+    else if (flags->type == 's')
         return_v = ft_type_string(flags, va_arg(ap, char *));
-    else if (flags->type == 'd')
+/*    else if (flags->type == 'd')
         return_v = ft_type_int(flags, va_arg(ap, int));
     else if (flags->type == 'i')
         return_v = ft_type_int(flags, va_arg(ap, int));
