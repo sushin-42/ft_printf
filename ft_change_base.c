@@ -23,7 +23,7 @@ char    *ft_change_base(unsigned long long n, int base)
     copy_n = n;
     n_len = 0;
     if(n == 0)
-        ft_strdup("0");
+        return (ft_strdup("0"));
     while (copy_n != 0)
     {
         copy_n /= base;

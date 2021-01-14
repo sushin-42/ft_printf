@@ -11,11 +11,12 @@ int ft_type_hexa(t_flag *flags, unsigned int n, int upper)
         return_v = ft_putwidth(flags->width, 0, 0);
         return (return_v);
     }
-    hexa_n = ft_change_base(n, 16);
+    hexa_n = ft_change_base((unsigned long long) n, 16);
     if (upper == 1)
     {    
         hexa_n = ft_str_upper(hexa_n);
     }
     return_v += ft_plus_int(hexa_n, flags);
+    free(hexa_n);
     return (return_v);
 }

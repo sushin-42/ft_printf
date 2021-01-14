@@ -3,25 +3,25 @@
 
 int main()
 {
-    unsigned int a = 122;
+    unsigned int a = 2147483648;
 
-    printf("%-10.5X\n", a);
-    ft_printf("%-10.5X\n", a);
+    printf("%-50.5p\n", a);
+    ft_printf("%-50.p\n", a);
     
-    printf("%010.5X\n", a);
-    ft_printf("%010.5X\n", a);
+    printf("%050.5p\n", a);
+    ft_printf("%050.5p\n", a);
     
-    printf("%10.5X\n", a);
-    ft_printf("%10.5X\n", a);
+    printf("%50.5p\n", a);
+    ft_printf("%50.5p\n", a);
     
-    printf("%-10X\n", a);
-    ft_printf("%-10X\n", a);
+    printf("%-50p\n", a);
+    ft_printf("%-50p\n", a);
     
-    printf("%010X\n", a); 
-    ft_printf("%010X\n", a);
+    printf("%050p\n", a); 
+    ft_printf("%050p\n", a);
     
-    printf("%10X\n", a); 
-    ft_printf("%10X\n", a);
+    printf("%50p\n", a); 
+    ft_printf("%50p\n", a);
 
 
 
