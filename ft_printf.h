@@ -28,4 +28,8 @@ int             ft_plus_int(char *a_i, t_flag *flags);
 int             ft_minus_int(char *a_i, t_flag *flags);
 int             ft_plus_put_int(char *a_i, t_flag *flags);
 int             ft_minus_put_int(char *a_i, t_flag *flags);
+int             ft_type_unint(t_flag *flags, unsigned int i);
+char            *ft_unitoa(unsigned int n);
+void            ft_unint_put_tmp(char *temp, unsigned int n, unsigned int n_len);
+unsigned int    ft_unint_len_check(unsigned int n);
 #endif

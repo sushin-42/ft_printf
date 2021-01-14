@@ -6,7 +6,7 @@
 #    By: ssb <marvin@42.fr>                         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/07 19:07:58 by ssb               #+#    #+#              #
-#    Updated: 2021/01/14 04:53:34 by ssb              ###   ########.fr        #
+#    Updated: 2021/01/14 10:13:57 by ssb              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,9 @@ SRCS = ft_printf.c \
 		ft_type_char.c \
 		ft_putwidth.c \
 		ft_type_string.c \
-		ft_type_int.c
+		ft_type_int.c \
+		ft_type_unint.c \
+		ft_unitoa.c
 OBJS = $(SRCS:.c=.o)
 LIBC = ar -rcs
 FLAGS = -Wall -Wextra -Werror
