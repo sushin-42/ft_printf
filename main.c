@@ -3,36 +3,25 @@
 
 int main()
 {
-/*    unsigned int a = 123;
+    unsigned int a = 122;
 
-    printf("%-10.5u\n", a);
-    ft_printf("%-10.5u\n", a);
+    printf("%-10.5X\n", a);
+    ft_printf("%-10.5X\n", a);
     
-    printf("%010.5u\n", a);
-    ft_printf("%010.5u\n", a);
+    printf("%010.5X\n", a);
+    ft_printf("%010.5X\n", a);
     
-    printf("%10.5u\n", a);
-    ft_printf("%10.5u\n", a);
+    printf("%10.5X\n", a);
+    ft_printf("%10.5X\n", a);
     
-    printf("%-10u\n", a);
-    ft_printf("%-10u\n", a);
+    printf("%-10X\n", a);
+    ft_printf("%-10X\n", a);
     
-    printf("%010u\n", a); 
-    ft_printf("%010u\n", a);
+    printf("%010X\n", a); 
+    ft_printf("%010X\n", a);
     
-    printf("%10u\n", a); 
-    ft_printf("%10u\n", a);
-*/
-    printf("%%\n");
-    ft_printf("%%\n");
-    printf("%10%\n");
-    ft_printf("%10%\n");
-    printf("%010%\n");
-    ft_printf("%010%\n");
-    printf("%-010%\n");
-    ft_printf("%-010%\n");
-     printf("%*%\n", 20);
-    ft_printf("%*%\n", 20);
+    printf("%10X\n", a); 
+    ft_printf("%10X\n", a);
 
 
 

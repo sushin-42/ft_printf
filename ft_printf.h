@@ -33,4 +33,9 @@ char            *ft_unitoa(unsigned int n);
 void            ft_unint_put_tmp(char *temp, unsigned int n, unsigned int n_len);
 unsigned int    ft_unint_len_check(unsigned int n);
 int             ft_type_percent(t_flag *flags);
+int             ft_type_hexa(t_flag *flags, unsigned int n, int upper);
+char            *ft_str_upper(char *str);
+char            ft_upper(int a);
+char            *ft_change_base(unsigned long long n, int base);
+char            *ft_put_change(unsigned long long n, char *temp, int base, int n_len);
 #endif

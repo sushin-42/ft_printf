@@ -84,7 +84,7 @@ int ft_type_int(t_flag *flags, int i)
     if (i < 0)
     {
         i *= -1;
-        a_i = ft_itoa(i);
+        a_i = ft_unitoa(i);
         return_v = ft_minus_int(a_i, flags);    
     }
     else
