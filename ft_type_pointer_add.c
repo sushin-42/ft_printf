@@ -19,8 +19,11 @@ int ft_type_pointer_add(t_flag *flags, unsigned long long n)
     return_v = 0;
     if (flags->precision == 0 && n == 0)
     {
-        write(1, "0x", 2);
+        if (flags->minus == 1)
+            write(1, "0x", 2);
         return_v = ft_putwidth(flags->width, 2, 0);
+        if (flags->minus == 0)
+            write(1, "0x", 2);
         return (return_v + 2);
     }
     pointer_n = ft_change_base(n, 16);
