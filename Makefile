@@ -6,7 +6,7 @@
 #    By: ssb <marvin@42.fr>                         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/07 19:07:58 by ssb               #+#    #+#              #
-#    Updated: 2021/01/15 07:24:21 by ssb              ###   ########.fr        #
+#    Updated: 2021/01/15 08:58:52 by ssb              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SRCS = ft_printf.c \
 		ft_type_hexa.c \
 		ft_str_upper.c \
 		ft_change_base.c \
-		ft_type_pointer_add.c
+		ft_type_pointer_add.c \
+		ft_flag_width_star.c
 OBJS = $(SRCS:.c=.o)
 LIBC = ar -rcs
 FLAGS = -Wall -Wextra -Werror

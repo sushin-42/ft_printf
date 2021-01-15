@@ -29,10 +29,12 @@ int ft_minus_put_int(char *a_i, t_flag *flags)
 int ft_minus_int(char *a_i, t_flag *flags)
 {
     int return_v;
+    int a_i_len;
 
+    a_i_len = ft_strlen(a_i);
     return_v = 0;
-    if (flags->precision >= 0 && (size_t)flags->precision < ft_strlen(a_i))
-        flags->precision = ft_strlen(a_i);
+    if (flags->precision >= 0 && flags->precision < a_i_len)
+        flags->precision = a_i_len;
     if (flags->precision >= 0)
         flags->width -= flags->precision;
     if (flags->minus == 1)
@@ -41,7 +43,7 @@ int ft_minus_int(char *a_i, t_flag *flags)
         return_v += ft_putwidth(flags->width, 1, 0);
     else
     {   
-        if (flags->zero == 1 && flags->precision == -1)
+        if (flags->zero == 1 && flags->precision < 0)
             write(1, "-", 1);
         return_v += ft_putwidth(flags->width, ft_strlen(a_i) + 1, flags->zero);            
     }
@@ -72,9 +74,11 @@ int ft_plus_int(char *a_i, t_flag *flags)
 
 int ft_type_int(t_flag *flags, int i)
 {
-    int return_v;
-    char *a_i;
+    int          return_v;
+    char         *a_i;
+    long long    copy_i;    
     
+    copy_i = i;
     return_v = 0;
     if (flags->precision == 0 && i == 0)
     {
@@ -83,8 +87,8 @@ int ft_type_int(t_flag *flags, int i)
     }
     if (i < 0)
     {
-        i *= -1;
-        a_i = ft_unitoa(i);
+        copy_i *= -1;
+        a_i = ft_unitoa(copy_i);
         return_v = ft_minus_int(a_i, flags);    
     }
     else

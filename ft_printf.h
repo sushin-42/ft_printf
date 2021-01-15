@@ -40,4 +40,5 @@ char            *ft_change_base(unsigned long long n, int base);
 char            *ft_put_change(unsigned long long n, char *temp, int base, int n_len);
 int             ft_type_pointer_add(t_flag *flags, unsigned long long n);
 int             ft_put_pointer_add(char *pointer_n);
+t_flag          *ft_flag_width_star(va_list ap, t_flag *flags);
 #endif
